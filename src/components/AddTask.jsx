@@ -10,12 +10,14 @@ function AddTask({ onAddTaskSubmit }) {
       <Input
         type="text"
         placeholder="Digite o título da tarefa"
+        id="tituloTarefa"
         value={title}
         onChange={(event) => setTitle(event.target.value)}
       />
       <Input
         type="text"
         placeholder="Digite a descrição da tarefa"
+        id="descricaoTarefa"
         value={description}
         onChange={(event) => setDescription(event.target.value)}
       />
@@ -29,6 +31,7 @@ function AddTask({ onAddTaskSubmit }) {
           setTitle("");
           setDescription("");
         }}
+        id="botaoAdicionar"
         className="bg-slate-500 text-white px-4 py-2 rounded-md font-medium"
       >
         Adicionar
